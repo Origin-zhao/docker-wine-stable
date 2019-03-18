@@ -13,7 +13,7 @@ RUN apt-get -y update && \
 	DEBIAN_FRONTEND=noninteractive apt-get -y --allow-unauthenticated install --install-recommends winehq-stable
 
 # RUN useradd -m wine
-# USER wine
-WORKDIR /home/ocr
-ENV HOME /home/ocr
+USER root
+WORKDIR /root
+ENV HOME /root
 CMD ["/bin/bash"]
