@@ -8,7 +8,6 @@ RUN apt-get -y update && \
 	#add-apt-repository https://dl.winehq.org/wine-builds/ubuntu/ && \
 	apt-get -y install language-pack-zh-hans && \
 	echo "export LC_ALL=zh_CN.utf8" >> /etc/profile && \
-	/bin/bash source /etc/profile && \
 	apt-key update && \
 	apt-get -y update && \
 	DEBIAN_FRONTEND=noninteractive apt-get -y --allow-unauthenticated install --install-recommends winehq-stable
