@@ -14,7 +14,7 @@ RUN apt-get -y update && \
 
 # RUN useradd -m wine
 # USER wine
-ENTRYPOINT ["source","/etc/profile"]  
+ENTRYPOINT ["bash","source","/etc/profile"]  
 WORKDIR /home/ocr
 ENV HOME /home/ocr
 CMD ["/bin/bash"]
